@@ -1,0 +1,18 @@
+.search-block {
+    width: 250px;
+    height: 45px;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+    padding: 0 15px;
+    input {
+        border: 0;
+        width: 200px;
+        font-size: 16px;
+        // margin-left: 14px;
+        padding: 13.75px;
+        opacity: 0.5;
+    }
+}
+.search-block::placeholder {
+    color: #C4C4C4;
+}
