@@ -1,8 +1,8 @@
-import './GreenButton.scss'
+import styles from './GreenButton.module.scss'
 
 const GreenButton = () => {
     return ( 
-        <button className='greenButton'>
+        <button className={styles.greenButton}>
         Оформить заказ
         <img src="/img/arrow.svg" alt="Arrow" />
         </button>

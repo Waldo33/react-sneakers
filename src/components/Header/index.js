@@ -1,6 +1,7 @@
 import './Header.scss'
 
-const Header = () => {
+const Header = (props) => {
+    const {onClickCart} = props
     return ( 
         <header className="d-flex justify-between align-center p-40">
             <div className='headerLeft d-flex align-center'>
@@ -11,7 +12,7 @@ const Header = () => {
             </div>
             </div>
             <ul className='headerRight d-flex align-center'>
-            <li className='d-flex align-center mr-30'>
+            <li onClick={onClickCart} className='d-flex align-center mr-30 cu-p'>
                 <img className="mr-10" src="/img/cart.svg" alt="" />
                 <span>1205 руб.</span>
             </li>

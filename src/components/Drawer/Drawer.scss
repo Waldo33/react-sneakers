@@ -1,5 +1,4 @@
 .overlay {
-    display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -20,6 +19,52 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
+    .cartEmpty {
+        padding: 20px;
+        text-align: center;
+        img {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 20px;
+        }
+        .greenButton {
+            position: relative;
+            width: 245px;
+            height: 55px;
+            background: #9DD558;
+            border-radius: 18px;
+            border: 0;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 20px 50px;
+            cursor: pointer;
+            transition: background 0.1s ease-in-out;
+        
+            &:hover {
+                background: lighten(#9DD558, 5%);
+                img {
+                    position: absolute;
+                    left: 20px;
+                }
+            }
+        
+            &:active {
+                background: darken(#9DD558, 5%);
+            }
+            img {
+                position: absolute;
+                left: 30px;
+                transition: left 0.3s ease-in-out;
+            }
+        }
+    }
     .items {
         overflow: auto;
         margin-bottom: 40px;

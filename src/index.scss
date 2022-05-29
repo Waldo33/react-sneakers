@@ -1,5 +1,6 @@
 body {
-    background: #E7F6FF;
+    background: #ffe7e7;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -19,18 +20,9 @@ body {
 }
 
 .card-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
-    margin: 0px 20px 0px 20px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-gap: 40px;
+    // margin: 0px 20px 0px 20px;
 }
 
-.button {
-    background: #fff;
-    border: 1px solid #f2f2f2;
-    box-sizing: border-box;
-    border-radius: 8px;
-    height: 32px;
-    width: 32px;
-    cursor: pointer;
-}

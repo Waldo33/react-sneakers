@@ -1,4 +1,5 @@
 .greenButton {
+    position: relative;
     width: 100%;
     height: 55px;
     background: #9DD558;
@@ -12,9 +13,18 @@
 
     &:hover {
         background: lighten(#9DD558, 5%);
+        img {
+            position: absolute;
+            right: 30px;
+        }
     }
 
     &:active {
         background: darken(#9DD558, 5%);
+    }
+    img {
+        position: absolute;
+        right: 40px;
+        transition: right 0.3s ease-in-out;
     }
 }
