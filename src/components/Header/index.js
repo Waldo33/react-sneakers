@@ -1,11 +1,12 @@
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 const Header = (props) => {
     const {onClickCart} = props
     return ( 
         <header className="d-flex justify-between align-center p-40">
             <div className='headerLeft d-flex align-center'>
-            <img className="mr-15" width={40} heigth={40} src="/img/logo.png" alt="" />
+            <Link to="/"><img className="mr-15" width={40} heigth={40} src="/img/logo.png" alt="" /></Link>
             <div className='headerInfo'>
                 <h3>React Sneakers</h3>
                 <p className='opacity-5'>Магазин лучших кроссовок</p>
@@ -17,10 +18,10 @@ const Header = (props) => {
                 <span>1205 руб.</span>
             </li>
             <li className='mr-30'>
-                <img src="/img/heart.svg" alt="" />
+                <Link to="/favorites"><img src="/img/heart.svg" alt="" /></Link>
             </li>
             <li>
-                <img src="/img/user.svg" alt="" />
+                <Link to="/user"><img src="/img/user.svg" alt="" /></Link>
             </li>
             </ul>
         </header>

@@ -2,8 +2,13 @@ import { useState } from 'react';
 import styles from './Card.module.scss'
 
 const Card = (props) => {
-    const {img, title, price, onFavorite, onPlus} = props;
+    const {id, img, title, price, onFavorite, onPlus, favorited = false} = props;
 
+    const [isFavorite, setIsFavorite] = useState(favorited);
+    const onClickFavorite = () => {
+      onFavorite({id, img, title, price});
+      setIsFavorite(!isFavorite)
+    }
     const [isAdd, setIsAdd] = useState(false);
     const onClickPlus = () => {
       onPlus({img, title, price});
@@ -12,8 +17,8 @@ const Card = (props) => {
 
     return ( 
         <div className={styles.card}>
-            <div className={styles.favorite} onClick={onFavorite}>
-              <img width={30} height={30} className={styles.bookmark} src="/img/unlike.svg" alt="Like" />
+            <div className={styles.favorite} onClick={onClickFavorite}>
+              <img width={30} height={30} className={styles.bookmark} src={isFavorite ? "/img/like.svg" : "/img/unlike.svg"} alt="Like" />
             </div>
             <img width={133} height={112} src={img} alt="" />
             <h5>{title}</h5>
