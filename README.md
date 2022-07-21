@@ -1,6 +1,6 @@
 # React-Sneakers
 
-The project with React
+SPA with REST API
 
 # Stack
 
