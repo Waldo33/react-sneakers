@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Waldo33/react-sneakers/static/css/main.6a6c7ec0.css",
-    "main.js": "/Waldo33/react-sneakers/static/js/main.53860a13.js",
+    "main.js": "/Waldo33/react-sneakers/static/js/main.aa80d399.js",
     "index.html": "/Waldo33/react-sneakers/index.html",
     "main.6a6c7ec0.css.map": "/Waldo33/react-sneakers/static/css/main.6a6c7ec0.css.map",
-    "main.53860a13.js.map": "/Waldo33/react-sneakers/static/js/main.53860a13.js.map"
+    "main.aa80d399.js.map": "/Waldo33/react-sneakers/static/js/main.aa80d399.js.map"
   },
   "entrypoints": [
     "static/css/main.6a6c7ec0.css",
-    "static/js/main.53860a13.js"
+    "static/js/main.aa80d399.js"
   ]
 }
