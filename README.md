@@ -4,8 +4,4 @@ The project with React
 
 # Stack
 
-React
-
-Sass
-
-Bootstrap
+React, React-router-dom, SCSS, Bootstrap
